@@ -1,5 +1,5 @@
 
-**Test if a set of vectors when scaled with a positive number, can combine to create create a goal vector.**
+**Test if a set of positive vectors when scaled with a positive number, can combine to create create a goal vector.**
   
 When working with positive values, the limit is the ratio of components
 So after finding the max and min ratios of components to components, check if goal vector is within these.
@@ -37,7 +37,11 @@ i/k
 <img width="566" alt="Screen Shot 2021-02-16 at 10 12 01 pm" src="https://user-images.githubusercontent.com/69740744/108055736-47d48b80-7048-11eb-8e3d-1a5a64f9cfde.png">
 
 The formula for the number of ratios is n (n-1) /2, so when n = 3 there are 3 * 2 / 2 = 3 ratios as shown.
+
 <img width="504" alt="Screen Shot 2021-02-17 at 9 55 44 am" src="https://user-images.githubusercontent.com/69740744/108132058-2ad0a480-70aa-11eb-972d-862fe497b966.png">
+
+Through the visualization you can this is similar to the sum of integers, 1 + 2 + 3 ...
+https://en.wikipedia.org/wiki/1_%2B_2_%2B_3_%2B_4_%2B_%E2%8B%AF
 
 
 **Now find the positive values.**
