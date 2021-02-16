@@ -2,8 +2,7 @@
 
   Test if a set of vectors when scaled with a positive number, can combine to create create a goal vector?
   
-  
-  
+  /n/n/n/n/n
   
   Thinking:
     
