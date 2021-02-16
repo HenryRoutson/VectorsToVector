@@ -2,7 +2,10 @@
 
   Test if a set of vectors when scaled with a positive number, can combine to create create a goal vector?
   
-  # Thinking
+  
+  
+  
+  Thinking:
     
    When working with positive values, the limit is the ratio of components
   So after finding the max and min ratios of components to components, check if goal vector is within these
