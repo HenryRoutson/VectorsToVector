@@ -1,7 +1,7 @@
 
 **Quickly test if scaled vectors can form a goal vector, where all scaling and vector components are positive**
 
-IE a * (i,j,k) + b * ... = (i,j,k)
+IE a x (i,j,k) + b x ... = (i,j,k)
 
 See if you can solve it for yourself before scrolling to read my answer. It should be simple enough to do by hand.
 
