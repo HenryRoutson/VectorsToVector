@@ -1,5 +1,5 @@
 
-**Quickly test if a set of positive vectors when scaled with a positive number, can combine to create create a goal vector.**
+**Quickly test if a set of vectors when scaled with a number, can combine to create create a goal vector. All vectors and numbers are positive.**
 
 See if you can solve it for yourself before scrolling to read my answer
 
