@@ -1,7 +1,7 @@
 
 **Quickly test if a set of vectors when scaled with a number, can combine to create create a goal vector. All vectors and numbers are positive.**
 
-See if you can solve it for yourself before scrolling to read my answer
+See if you can solve it for yourself before scrolling to read my answer. It should be simple enough to do by hand.
 
 <br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br />
 <br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br />
@@ -65,7 +65,3 @@ https://en.wikipedia.org/wiki/1_%2B_2_%2B_3_%2B_4_%2B_%E2%8B%AF
 <img width="566" alt="Screen Shot 2021-02-16 at 10 09 39 pm" src="https://user-images.githubusercontent.com/69740744/108055728-45723180-7048-11eb-929f-ff3e629d42a7.png">
 
 <img width="566" alt="Screen Shot 2021-02-16 at 10 12 01 pm" src="https://user-images.githubusercontent.com/69740744/108055736-47d48b80-7048-11eb-8e3d-1a5a64f9cfde.png">
-
-
-
-
