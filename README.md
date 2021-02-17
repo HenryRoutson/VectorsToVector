@@ -71,7 +71,7 @@ Components:
 
 The formula for the number of ratios is n (n-1) /2, where n is the number of components, so when n = 3 there are 3 * 2 / 2 = 3 ratios as shown. 
 
-<img width="504" alt="Screen Shot 2021-02-17 at 9 55 44 am" src="https://user-images.githubusercontent.com/69740744/108132058-2ad0a480-70aa-11eb-972d-862fe497b966.png">
+<img width="500" alt="Screen Shot 2021-02-17 at 10 41 07 pm" src="https://user-images.githubusercontent.com/69740744/108199511-0d84f000-7115-11eb-9032-7f22313b4f3c.png">
 
   Through the visualization and the formula, you can this is similar to the sum of integers, 1 + 2 + 3 ... n = n (n+1) /2
 
