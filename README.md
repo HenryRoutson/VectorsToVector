@@ -1,7 +1,12 @@
 
 **Quickly test if a set of positive vectors when scaled with a positive number, can combine to create create a goal vector.**
+
+See if you can solve it for yourself before scrolling to read my answer
+
+<br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br />
+<br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br />
   
-When working with positive values, the limit is the ratio of components
+When working with positive values, the limit is the ratio of components. 
 So after finding the max and min ratios of components to components, check if goal vector is within these.
 This scales to any number of components or vectors.
 
@@ -9,23 +14,35 @@ This scales to any number of components or vectors.
 
 a * (8,2,4) + b * (1, 2, 16) = (9,4,20)
 
-i/j
-- min: 1/2
-- max: 4
-- goal: 9/4
-- inside? True
+i / j
 
-j/k
-- min 1/8
-- max 1/2
-- goal 1/5
-- inside? True
+    min: 1/2
 
-i/k
-- min 1/16
-- max 2
-- goal 9/ 20
-- inside? True
+    max: 4
+
+    goal: 9/4
+
+    inside? True
+
+j / k
+
+    min 1/8
+    
+    max 1/2
+    
+    goal 1/5
+    
+    inside? True
+
+i / k
+
+    min 1/16
+    
+    max 2
+    
+    goal 9/ 20
+    
+    inside? True
 
 (a = 1, b = 1)
 
@@ -41,11 +58,9 @@ But all vectors do not need to be checked for ratios, as only a ratio larger and
 
 <img width="504" alt="Screen Shot 2021-02-17 at 9 55 44 am" src="https://user-images.githubusercontent.com/69740744/108132058-2ad0a480-70aa-11eb-972d-862fe497b966.png">
 
-Through the visualization you can this is similar to the sum of integers, 1 + 2 + 3 ...
+Through the visualization and the formula, you can this is similar to the sum of integers, 1 + 2 + 3 ... n = n (n+1) /2
+
 https://en.wikipedia.org/wiki/1_%2B_2_%2B_3_%2B_4_%2B_%E2%8B%AF
-
-**Now find the positive values.**
-
 
 
 
