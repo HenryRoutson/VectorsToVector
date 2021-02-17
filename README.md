@@ -55,7 +55,9 @@ Through the visualization and the formula, you can this is similar to the sum of
 
 https://en.wikipedia.org/wiki/1_%2B_2_%2B_3_%2B_4_%2B_%E2%8B%AF
 
-#visualizations
+<br />
+
+**visualizations**
 
 ![ezgif com-video-to-gif](https://user-images.githubusercontent.com/69740744/108145884-1699a100-70c4-11eb-83d2-9d8327e8f784.gif)
 
