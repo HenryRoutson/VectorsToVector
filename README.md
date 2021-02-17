@@ -19,7 +19,7 @@ Does this help?
 
 **Answer**
   
-When working with positive values, the limit is the ratio of components. 
+When working with positive values, the limit of reach is the ratio of components. 
 So for each ratio, you only need to find a value greater and less than the goal value to verify it is in reach of the vectors.
 This scales to any number of components or vectors.
 
@@ -61,7 +61,7 @@ i / k
 
 **Visualizations**
 
-<img width="566" alt="Screen Shot 2021-02-16 at 10 09 39 pm" src="https://user-images.githubusercontent.com/69740744/108055728-45723180-7048-11eb-929f-ff3e629d42a7.png"><img width="566" alt="Screen Shot 2021-02-16 at 10 12 01 pm" src="https://user-images.githubusercontent.com/69740744/108055736-47d48b80-7048-11eb-8e3d-1a5a64f9cfde.png">
+<img width="250" alt="Screen Shot 2021-02-16 at 10 09 39 pm" src="https://user-images.githubusercontent.com/69740744/108055728-45723180-7048-11eb-929f-ff3e629d42a7.png"><img width="250" alt="Screen Shot 2021-02-16 at 10 12 01 pm" src="https://user-images.githubusercontent.com/69740744/108055736-47d48b80-7048-11eb-8e3d-1a5a64f9cfde.png">
 
 <br />
 
