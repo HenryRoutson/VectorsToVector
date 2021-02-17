@@ -1,7 +1,16 @@
 
-**Quickly test if a known set of vectors when scaled with a unknown numbers for each, can combine to create create a known goal vector. All vectors and numbers are positive.**
+**Quickly test if scaled vectors can form a goal vector, where all scaling and vector components are positive**
+
+IE a * (i,j,k) + b * ... = (i,j,k)
 
 See if you can solve it for yourself before scrolling to read my answer. It should be simple enough to do by hand.
+
+<br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br />
+<br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br />
+
+Does this help?
+
+![ezgif com-video-to-gif](https://user-images.githubusercontent.com/69740744/108145884-1699a100-70c4-11eb-83d2-9d8327e8f784.gif)
 
 <br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br />
 <br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br />
@@ -57,10 +66,7 @@ https://en.wikipedia.org/wiki/1_%2B_2_%2B_3_%2B_4_%2B_%E2%8B%AF
 
 <br />
 
-**visualizations**
-
-![ezgif com-video-to-gif](https://user-images.githubusercontent.com/69740744/108145884-1699a100-70c4-11eb-83d2-9d8327e8f784.gif)
-
+**Other visualizations**
 
 <img width="566" alt="Screen Shot 2021-02-16 at 10 09 39 pm" src="https://user-images.githubusercontent.com/69740744/108055728-45723180-7048-11eb-929f-ff3e629d42a7.png">
 
