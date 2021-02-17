@@ -59,8 +59,13 @@ i / k
 
 **Performance**
 
-The formula for the number of ratios is n (n-1) /2, where n is the number of components, so when n = 3 there are 3 * 2 / 2 = 3 ratios as shown.
-But for more than 2, all vectors do not need to be checked for ratios, as only a ratio larger and smaller needs to be found.
+Components:
+
+The formula for the number of ratios is n (n-1) /2, where n is the number of components, so when n = 3 there are 3 * 2 / 2 = 3 ratios as shown. 
+
+Vectors:
+
+For more than 2 vectors, not all vectors need to be checked for ratios as only a ratio larger and smaller than the goal needs to be found for each ratio
 
 <img width="504" alt="Screen Shot 2021-02-17 at 9 55 44 am" src="https://user-images.githubusercontent.com/69740744/108132058-2ad0a480-70aa-11eb-972d-862fe497b966.png">
 
