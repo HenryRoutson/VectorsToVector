@@ -1,5 +1,5 @@
 
-**Quickly test if scaled vectors can form a goal vector, where all scaling and vector components are positive**
+**Quickly test if scaled vectors can form a goal vector, where all scaling magnitudes and vector components are positive**
 
 IE a x (i,j,k) + b x ... = (i,j,k)
 
@@ -18,7 +18,7 @@ Does this help?
 **Answer**
   
 When working with positive values, the limit is the ratio of components. 
-So after finding the max and min ratios, check if goal vector is within these.
+So for each ratio, you only need to find a value greater and less than the goal value to verify it is in reach of the vectors.
 This scales to any number of components or vectors.
 
 a * (8,2,4) + b * (1, 2, 16) = (9,4,20)
@@ -67,11 +67,11 @@ The formula for the number of ratios is n (n-1) /2, where n is the number of com
 
   Through the visualization and the formula, you can this is similar to the sum of integers, 1 + 2 + 3 ... n = n (n+1) /2
 
-https://en.wikipedia.org/wiki/1_%2B_2_%2B_3_%2B_4_%2B_%E2%8B%AF
+https://en.wikipedia.org/wiki/1_%2B_2_%2B_3_%2B_4_%2B_%E2%8B%AFd
 
 Vectors:
 
-For more than 2 vectors, not all vectors need to be checked for ratios as only a ratio larger and smaller than the goal needs to be found for each ratio
+As mentioned, a global min and max don't need to be found, only values larger and smaller than the goal vector.
 
 <br />
 
