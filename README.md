@@ -55,12 +55,14 @@ i / k
 
 (a = 1, b = 1)
 
+**Performance**
+
 The formula for the number of ratios is n (n-1) /2, where n is the number of components, so when n = 3 there are 3 * 2 / 2 = 3 ratios as shown.
 But for more than 2, all vectors do not need to be checked for ratios, as only a ratio larger and smaller needs to be found.
 
 <img width="504" alt="Screen Shot 2021-02-17 at 9 55 44 am" src="https://user-images.githubusercontent.com/69740744/108132058-2ad0a480-70aa-11eb-972d-862fe497b966.png">
 
-Through the visualization and the formula, you can this is similar to the sum of integers, 1 + 2 + 3 ... n = n (n+1) /2
+  Through the visualization and the formula, you can this is similar to the sum of integers, 1 + 2 + 3 ... n = n (n+1) /2
 
 https://en.wikipedia.org/wiki/1_%2B_2_%2B_3_%2B_4_%2B_%E2%8B%AF
 
