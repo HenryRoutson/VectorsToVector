@@ -55,6 +55,8 @@ i / k
 
 (a = 1, b = 1)
 
+<br />
+
 **Performance**
 
 The formula for the number of ratios is n (n-1) /2, where n is the number of components, so when n = 3 there are 3 * 2 / 2 = 3 ratios as shown.
