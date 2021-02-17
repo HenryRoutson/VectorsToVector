@@ -14,12 +14,12 @@ Does this help?
 
 <br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br />
 <br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br />
+
+**Answer**
   
 When working with positive values, the limit is the ratio of components. 
 So after finding the max and min ratios of components to components, check if goal vector is within these.
 This scales to any number of components or vectors.
-
-(i,j,k)
 
 a * (8,2,4) + b * (1, 2, 16) = (9,4,20)
 
