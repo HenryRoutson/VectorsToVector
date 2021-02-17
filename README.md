@@ -46,13 +46,6 @@ i / k
 
 (a = 1, b = 1)
 
-![ezgif com-video-to-gif](https://user-images.githubusercontent.com/69740744/108145884-1699a100-70c4-11eb-83d2-9d8327e8f784.gif)
-
-
-<img width="566" alt="Screen Shot 2021-02-16 at 10 09 39 pm" src="https://user-images.githubusercontent.com/69740744/108055728-45723180-7048-11eb-929f-ff3e629d42a7.png">
-
-<img width="566" alt="Screen Shot 2021-02-16 at 10 12 01 pm" src="https://user-images.githubusercontent.com/69740744/108055736-47d48b80-7048-11eb-8e3d-1a5a64f9cfde.png">
-
 The formula for the number of ratios is n (n-1) /2, where n is the number of components, so when n = 3 there are 3 * 2 / 2 = 3 ratios as shown.
 But all vectors do not need to be checked for ratios, as only a ratio larger and smaller needs to be found.
 
@@ -61,6 +54,16 @@ But all vectors do not need to be checked for ratios, as only a ratio larger and
 Through the visualization and the formula, you can this is similar to the sum of integers, 1 + 2 + 3 ... n = n (n+1) /2
 
 https://en.wikipedia.org/wiki/1_%2B_2_%2B_3_%2B_4_%2B_%E2%8B%AF
+
+#visualizations
+
+![ezgif com-video-to-gif](https://user-images.githubusercontent.com/69740744/108145884-1699a100-70c4-11eb-83d2-9d8327e8f784.gif)
+
+
+<img width="566" alt="Screen Shot 2021-02-16 at 10 09 39 pm" src="https://user-images.githubusercontent.com/69740744/108055728-45723180-7048-11eb-929f-ff3e629d42a7.png">
+
+<img width="566" alt="Screen Shot 2021-02-16 at 10 12 01 pm" src="https://user-images.githubusercontent.com/69740744/108055736-47d48b80-7048-11eb-8e3d-1a5a64f9cfde.png">
+
 
 
 
