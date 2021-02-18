@@ -5,7 +5,7 @@ IE
 
 a x (i,j,k) + b x ... = (i,j,k)
 
-See if you can solve it for yourself before scrolling to read my answer. It should be simple enough to do by hand.
+See if you can solve it for yourself before scrolling to read my answer. It should be simple enough to do by hand and you dont have to solve for values.
 
 <br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br />
 <br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br />
