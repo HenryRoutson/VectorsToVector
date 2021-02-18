@@ -56,6 +56,7 @@ i / k
     inside? True
 
 (a = 1, b = 1)
+https://www.wolframalpha.com/input/?i=a+*+%288%2C2%2C4%29+%2B+b+*+%281%2C+2%2C+16%29+%3D+%289%2C4%2C20%29
 
 <br />
 
