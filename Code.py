@@ -22,7 +22,7 @@ lesser True
 greater True
 
 vectorsReachGoal: True
---- 0.0055141448974609375 seconds ---
+--- 0.004354953765869141 seconds ---
 """
 
 def vectorsReachGoal(vectors, goalVector):
