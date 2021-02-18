@@ -1,3 +1,4 @@
+# Problem #
 
 **Quickly test if scaled vectors can form a goal vector, where all scaling magnitudes and vector components are positive**
 
@@ -17,7 +18,7 @@ Does this help?
 <br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br />
 <br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br />
 
-**Answer**
+# Answer #
   
 When working with positive values, the limit of reach is the ratio of components. 
 So for each ratio, you only need to find a value greater and less than the goal value to verify it is in reach of the vectors.
