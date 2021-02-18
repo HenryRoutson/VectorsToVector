@@ -25,17 +25,6 @@ vectorsReachGoal: True
 --- 0.0055141448974609375 seconds ---
 """
 
-import time
-start_time = time.time()
-
-vectors = [[8,2,4], [1,2,16]]
-goalVector = [9,4,20]
-components = len(goalVector)
-
-print("goalVector", goalVector)
-print("vectors", vectors)
-print()
-
 def vectorsReachGoal(vectors, goalVector):
 
     # moves to different components as to go through unique ratios
@@ -69,7 +58,17 @@ def vectorsReachGoal(vectors, goalVector):
             print()
 
     # passes if all ratios pass and don't return before this is called
-    return True        
+    return True 
 
+vectors = [[8,2,4], [1,2,16]]
+goalVector = [9,4,20]
+components = len(goalVector)
+
+print("goalVector", goalVector)
+print("vectors", vectors)
+print()       
+
+import time
+start_time = time.time()
 print("vectorsReachGoal:",vectorsReachGoal(vectors, goalVector) )
 print("--- %s seconds ---" % (time.time() - start_time))
