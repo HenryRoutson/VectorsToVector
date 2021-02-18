@@ -17,13 +17,13 @@ def vectorsReachGoal(vectors, goalVector):
 
             # for a single ratio
             goalRatio = goalVector[start_restriction] / goalVector[start_restriction+component]
-            print(goalVector[start_restriction], "/",goalVector[start_restriction+component], "<GOAL")
+            print(goalVector[start_restriction], "/", goalVector[start_restriction+component], "<GOAL")
 
             lesserRatioSeen, greaterRatioSeen = False, False
 
             for vector in vectors:
               ratio = vector[start_restriction] / vector[start_restriction+component]
-              print(vector[start_restriction], "/",vector[start_restriction+component])
+              print(vector[start_restriction], "/", vector[start_restriction+component])
 
               if ratio < goalRatio:
                 lesserRatioSeen = True
