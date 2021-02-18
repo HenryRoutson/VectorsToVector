@@ -1,6 +1,6 @@
 # Problem #
 
-**Quickly test if scaled vectors can form a goal vector, where all scaling magnitudes and vector components are positive**
+**Quickly test if a number of scaled vectors can form a goal vector, where all scaling magnitudes and vector components are positive**
 
 IE 
 
