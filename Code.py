@@ -1,3 +1,30 @@
+#Example output
+"""
+goalVector [9, 4, 20]
+vectors [[8, 2, 4], [1, 2, 16]]
+
+9 / 4 <GOAL
+8 / 2
+1 / 2
+lesser True
+greater True
+
+9 / 20 <GOAL
+8 / 4
+1 / 16
+lesser True
+greater True
+
+4 / 20 <GOAL
+2 / 4
+2 / 16
+lesser True
+greater True
+
+vectorsReachGoal: True
+--- 0.0055141448974609375 seconds ---
+"""
+
 import time
 start_time = time.time()
 
