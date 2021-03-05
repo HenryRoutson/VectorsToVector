@@ -83,6 +83,6 @@ https://en.wikipedia.org/wiki/1_%2B_2_%2B_3_%2B_4_%2B_%E2%8B%AFd
 
 Vectors:
 
-As mentioned, a global min and max don't need to be found, only values larger and smaller than the goal vector.
+As mentioned, a global min and max don't need to be found, only values larger and smaller than the goal vector. In other words not all vectors need to be looked at.
 
 <br />
