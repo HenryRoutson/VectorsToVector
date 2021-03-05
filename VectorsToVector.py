@@ -26,8 +26,7 @@ def vectorsReachGoal(vectors, goalVector):
             print("lesser", lesserRatioSeen)
             print("greater", greaterRatioSeen)
 
-            if not lesserRatioSeen or not greaterRatioSeen:
-              return False
+            return False
             print()
 
     # passes if all ratios pass and don't return before this is called
