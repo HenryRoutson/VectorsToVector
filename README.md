@@ -22,7 +22,8 @@ Does this help?
   
 When working with positive values, the limit of reach is the ratio of components. 
 So for each ratio, you only need to find a value greater and less than the goal value to verify it is in reach of the vectors.
-This scales to any number of components or vectors.
+This scales to any number of components or vectors and is extremely quick.
+See the python file for execution with code.
 
 a * (8,2,4) + b * (1, 2, 16) = (9,4,20)
 
