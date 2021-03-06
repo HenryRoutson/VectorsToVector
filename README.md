@@ -4,7 +4,7 @@
 
 IE 
 
-a x (i,j,k) + b x ... = (i,j,k)
+a * (8,2,4) + b * (1, 2, 16) = (9,4,20) | a > 0, b > 0
 
 See if you can solve it for yourself before scrolling to read my answer. It should be simple enough to do by hand and you don't have to solve for values.
 
