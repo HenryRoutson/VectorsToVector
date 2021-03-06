@@ -27,35 +27,40 @@ See the python file for execution with code.
 
 a * (8,2,4) + b * (1, 2, 16) = (9,4,20)
 
+PYTHON PRINT
+START
+
+goalVector [9, 4, 20]
+vectors [[8, 2, 4], [1, 2, 16]]
+
 i / j
 
-    min: 1/2
+      9 / 4  < GOAL
 
-    max: 4
+      8 / 2  < greater
 
-    goal: 9/4
-
-    inside? True
-
-j / k
-
-    min 1/8
-    
-    max 1/2
-    
-    goal 1/5
-    
-    inside? True
+      1 / 2  < lesser
 
 i / k
 
-    min 1/16
-    
-    max 2
-    
-    goal 9/ 20
-    
-    inside? True
+      9 / 20  < GOAL
+
+      8 / 4  < greater
+
+      1 / 16  < lesser
+
+j / k
+
+      4 / 20  < GOAL
+
+      2 / 4  < greater
+
+      2 / 16  < lesser
+
+vectorsReachGoal: True
+--- 0.006424903869628906 seconds ---
+
+END
 
 (a = 1, b = 1)
 
