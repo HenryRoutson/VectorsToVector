@@ -1,8 +1,8 @@
 # Problem #
 
-**Quickly test if a number of scaled vectors can form a goal vector, where all scaling magnitudes and vector components are positive**
+**Quickly test if any number of scaled vectors can form a goal vector, where all scaling magnitudes and vector components are positive**
 
-IE 
+As an concrete example:
 
 a * (8,2,4) + b * (1, 2, 16) = (9,4,20) | a > 0, b > 0
 
