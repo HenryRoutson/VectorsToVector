@@ -1,120 +1,113 @@
+def testRatio(vectors, goalVector, component_one, component_two):
+
+    if len(goalVector) <= 3:
+      letterVector = ["i","j","k"]
+      print(letterVector[component_one], "/", letterVector[component_two], "\n")
+
+    goalRatio = goalVector[component_one] / goalVector[component_two]
+    print("    ", goalVector[component_one], "/", goalVector[component_two], " < GOAL \n")
+
+    lesserRatio, greaterRatio = False, False
+
+    # test if the ratio fits within the ratio range of the vectors
+    for vector in vectors:
+      ratio = vector[component_one] / vector[component_two]
+      print("    ", vector[component_one], "/", vector[component_two], end =" ")
+
+      if ratio < goalRatio:
+        lesserRatio = True
+        print(" < lesser \n")
+        if greaterRatio:
+          return True # next ratio
+      elif goalRatio < ratio:
+        greaterRatio = True
+        print(" < greater \n")
+        if lesserRatio:
+          return True # next ratio
+      else: 
+        print(" < equal \n")
+        return True # next ratio
+
+    return False
+
 def vectorsReachGoal(vectors, goalVector):
 
+    print("\n\n\n")
+    print("goalVector", goalVector, "\n")
+    print("vectors", vectors, "\n")  
+
     # moves to different components as to go through unique ratios
-    for start in range(components):
-        for end in range(start+1, components):
+    for component_one in range(len(goalVector)):
+        for component_two in range(component_one+1, len(goalVector)):
 
-            # for a single ratio
-            goalRatio = goalVector[start] / goalVector[end]
-            print(letterVector[start], "/", letterVector[end])
-            print("    ", goalVector[start], "/", goalVector[end], " < GOAL \n")
-
-            lesserRatio, greaterRatio, equalRatio = False, False, False
-
-            for vector in vectors:
-              ratio = vector[start] / vector[end]
-              print("    ", vector[start], "/", vector[end], end =" ")
-
-              if ratio < goalRatio:
-                lesserRatio = True
-                print(" < lesser \n")
-                if greaterRatio:
-                  continue
-              elif goalRatio < ratio:
-                greaterRatio = True
-                print(" < greater \n")
-                if lesserRatio:
-                  continue
-              elif goalRatio == ratio:
-                equalRatio = True
-                print(" < equal \n")
-                continue
-
-            if not lesserRatio or not greaterRatio:
-              if not equalRatio:
-                print("Above does't reach\n")
-                return False
+            if not testRatio(vectors, goalVector, component_one, component_two):
+              print("vectorsReachGoal(...) == False")
+              return False
              
-
-    # passes if all ratios pass and don't return before this is called
-    print("Vector reaches goal")
+    # passes if all ratios pass and don't return false before here
+    print("vectorsReachGoal(...) == True")
     return True 
-    
-
-vectors = [[8,2,4], [1,2,16]]
-goalVector = [9,4,20]
-letterVector = ["i","j","k"]
-components = len(goalVector)
-
-print("goalVector", goalVector, "\n")
-print("vectors", vectors, "\n")      
 
 import time
 start_time = time.time()
-temp0 = vectorsReachGoal(vectors, goalVector)
+
+assert vectorsReachGoal( [(8,2,4),(1,2,16)], (9,4,20) )
+assert vectorsReachGoal( [(8,2,4),(1,2,16), (1,2,3)], (9,4,200)) == False
+assert vectorsReachGoal( [(8,2,4),(1,2,16), (1,2,3)], (9,4,200)) == False
+assert vectorsReachGoal( [(5,3,9),(3,5,7), (1,2,3)], (15,4,20)) == False
+assert vectorsReachGoal( [(15,4,20)], (15,4,20) )
+assert vectorsReachGoal( [(15,4,20)], (15,4,20) )
+
 print("\n --- %s seconds ---" % (time.time() - start_time))
 
-print("\n\n\n Assert testing \n")
-assert temp0, True
-
-temp1 = vectorsReachGoal([[8,2,4], [1,2,16], [1,2,3]], [9,4,200])
-assert temp1 == False , "Failed testing"
-
-temp2 = vectorsReachGoal([[8,2,4], [1,2,16], [1,2,3]], [9,4,200])
-assert temp2 == False , "Failed testing"
-
-temp3 = vectorsReachGoal([[5,3,9], [3,5,7], [1,2,3]], [15,4,20])
-assert temp3 == False , "Failed testing"
-
-temp4 = vectorsReachGoal([[15,4,20]], [15,4,20])
-assert temp4, "Failed testing"
-
 """
+goalVector (9, 4, 20) 
 
-goalVector [9, 4, 20] 
+vectors [(8, 2, 4), (1, 2, 16)] 
 
-vectors [[8, 2, 4], [1, 2, 16]] 
+i / j 
 
-i / j
      9 / 4  < GOAL 
 
      8 / 2  < greater 
 
      1 / 2  < lesser 
 
-i / k
+i / k 
+
      9 / 20  < GOAL 
 
      8 / 4  < greater 
 
      1 / 16  < lesser 
 
-j / k
+j / k 
+
      4 / 20  < GOAL 
 
      2 / 4  < greater 
 
      2 / 16  < lesser 
 
-
- --- 0.002755880355834961 seconds ---
-
- vectorsReachGoal: True
+vectorsReachGoal(...) == True
 
 
 
- Assert testing 
 
-i / j
+goalVector (9, 4, 200) 
+
+vectors [(8, 2, 4), (1, 2, 16), (1, 2, 3)] 
+
+i / j 
+
      9 / 4  < GOAL 
 
      8 / 2  < greater 
 
      1 / 2  < lesser 
 
-     1 / 2  < lesser 
+i / k 
 
-i / k
      9 / 200  < GOAL 
 
      8 / 4  < greater 
@@ -123,18 +116,25 @@ i / k
 
      1 / 3  < greater 
 
-FAILED
+vectorsReachGoal(...) == False
 
-i / j
+
+
+
+goalVector (9, 4, 200) 
+
+vectors [(8, 2, 4), (1, 2, 16), (1, 2, 3)] 
+
+i / j 
+
      9 / 4  < GOAL 
 
      8 / 2  < greater 
 
      1 / 2  < lesser 
 
-     1 / 2  < lesser 
+i / k 
 
-i / k
      9 / 200  < GOAL 
 
      8 / 4  < greater 
@@ -143,9 +143,17 @@ i / k
 
      1 / 3  < greater 
 
-FAILED
+vectorsReachGoal(...) == False
 
-i / j
+
+
+
+goalVector (15, 4, 20) 
+
+vectors [(5, 3, 9), (3, 5, 7), (1, 2, 3)] 
+
+i / j 
+
      15 / 4  < GOAL 
 
      5 / 3  < lesser 
@@ -154,21 +162,62 @@ i / j
 
      1 / 2  < lesser 
 
-FAILED
+vectorsReachGoal(...) == False
 
-i / j
+
+
+
+goalVector (15, 4, 20) 
+
+vectors [(15, 4, 20)] 
+
+i / j 
+
      15 / 4  < GOAL 
 
      15 / 4  < equal 
 
-i / k
+i / k 
+
      15 / 20  < GOAL 
 
      15 / 20  < equal 
 
-j / k
+j / k 
+
      4 / 20  < GOAL 
 
      4 / 20  < equal 
 
+vectorsReachGoal(...) == True
+
+
+
+
+goalVector (15, 4, 20) 
+
+vectors [(15, 4, 20)] 
+
+i / j 
+
+     15 / 4  < GOAL 
+
+     15 / 4  < equal 
+
+i / k 
+
+     15 / 20  < GOAL 
+
+     15 / 20  < equal 
+
+j / k 
+
+     4 / 20  < GOAL 
+
+     4 / 20  < equal 
+
+vectorsReachGoal(...) == True
+
+ --- 0.02840113639831543 seconds ---
+ 
 """
