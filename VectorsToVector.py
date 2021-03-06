@@ -2,8 +2,7 @@ def vectorsReachGoal(vectors, goalVector):
 
     # moves to different components as to go through unique ratios
     for start in range(components):
-        for startToEnd in range(1, components - start):
-            end = start + startToEnd
+        for end in range(start+1, components):
 
             # for a single ratio
             goalRatio = goalVector[start] / goalVector[end]
