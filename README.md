@@ -30,8 +30,9 @@ a * (8,2,4) + b * (1, 2, 16) = (9,4,20)
 PYTHON PRINT
 START
 
-goalVector [9, 4, 20]
-vectors [[8, 2, 4], [1, 2, 16]]
+goalVector [9, 4, 20] 
+
+vectors [[8, 2, 4], [1, 2, 16]] 
 
 i / j
 
