@@ -1,43 +1,46 @@
 def vectorsReachGoal(vectors, goalVector):
 
     # moves to different components as to go through unique ratios
-    for start_restriction in range(components):
-        for component in range(1, components - start_restriction):
+    for start in range(components):
+        for startToEnd in range(1, components - start):
+            end = start + startToEnd
 
             # for a single ratio
-            goalRatio = goalVector[start_restriction] / goalVector[start_restriction+component]
-            print(letterVector[start_restriction], "/", letterVector[start_restriction+component])
-            print("    ", goalVector[start_restriction], "/", goalVector[start_restriction+component], " < GOAL \n")
+            goalRatio = goalVector[start] / goalVector[end]
+            print(letterVector[start], "/", letterVector[end])
+            print("    ", goalVector[start], "/", goalVector[end], " < GOAL \n")
 
-            lesserRatioSeen, greaterRatioSeen, equalRatioSeen = False, False, False
+            lesserRatio, greaterRatio, equalRatio = False, False, False
 
             for vector in vectors:
-              ratio = vector[start_restriction] / vector[start_restriction+component]
-              print("    ", vector[start_restriction], "/", vector[start_restriction+component], end =" ")
+              ratio = vector[start] / vector[end]
+              print("    ", vector[start], "/", vector[end], end =" ")
 
               if ratio < goalRatio:
-                lesserRatioSeen = True
+                lesserRatio = True
                 print(" < lesser \n")
-                if greaterRatioSeen:
+                if greaterRatio:
                   continue
               elif goalRatio < ratio:
-                greaterRatioSeen = True
+                greaterRatio = True
                 print(" < greater \n")
-                if lesserRatioSeen:
+                if lesserRatio:
                   continue
               elif goalRatio == ratio:
-                equalRatioSeen = True
+                equalRatio = True
                 print(" < equal \n")
                 continue
 
-            if not lesserRatioSeen or not greaterRatioSeen:
-              if not equalRatioSeen:
-                print("FAILED\n")
+            if not lesserRatio or not greaterRatio:
+              if not equalRatio:
+                print("Above does't reach\n")
                 return False
-              
+             
 
     # passes if all ratios pass and don't return before this is called
+    print("Vector reaches goal")
     return True 
+    
 
 vectors = [[8,2,4], [1,2,16]]
 goalVector = [9,4,20]
@@ -49,14 +52,11 @@ print("vectors", vectors, "\n")
 
 import time
 start_time = time.time()
-
 temp0 = vectorsReachGoal(vectors, goalVector)
-assert temp0, True
-
 print("\n --- %s seconds ---" % (time.time() - start_time))
-print("\n vectorsReachGoal:", temp)
 
 print("\n\n\n Assert testing \n")
+assert temp0, True
 
 temp1 = vectorsReachGoal([[8,2,4], [1,2,16], [1,2,3]], [9,4,200])
 assert temp1 == False , "Failed testing"
