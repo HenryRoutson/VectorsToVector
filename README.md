@@ -25,7 +25,7 @@ So for each ratio, you only need to find a value greater and less than the goal 
 This scales to any number of components or vectors and is extremely quick.
 See the python file for execution with code.
 
-a * (8,2,4) + b * (1, 2, 16) = (9,4,20)
+a * (8,2,4) + b * (1, 2, 16) = (9,4,20) | a > 0, b > 0
 
 PYTHON PRINT
 START
