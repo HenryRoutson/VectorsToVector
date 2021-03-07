@@ -79,7 +79,7 @@ https://www.wolframalpha.com/input/?i=a+*+%288%2C2%2C4%29+%2B+b+*+%281%2C+2%2C+1
 
 Components:
 
-The formula for the number of ratios is n (n-1) /2, where n is the number of components, so when n = 3 there are 3 * 2 / 2 = 3 ratios as shown. 
+The formula for the number of ratios is n*(n-1) /2, where n is the number of components, so when n = 3 there are 3 * 2 / 2 = 3 ratios as shown. 
 
 <img width="500" alt="Screen Shot 2021-02-17 at 10 41 07 pm" src="https://user-images.githubusercontent.com/69740744/108199511-0d84f000-7115-11eb-9032-7f22313b4f3c.png">
 
