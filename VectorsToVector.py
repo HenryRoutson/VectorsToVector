@@ -50,6 +50,8 @@ import time
 start_time = time.time()
 
 # test https://www.wolframalpha.com/input/?i=a*%281%2C2%2C3%29%2Bb*%281%2C2%2C3%29%2Bc*%281%2C2%2C3%29%2Bd*%281%2C2%2C3%29%3D%281%2C23%29
+# remember that scale values can always be set to 0 https://www.wolframalpha.com/input/?i=a*%285%2C3%29%2Bb*%2815%2C4%29%2Bc*%2815%2C4%29%3D%285%2C3%29
+
 # visualize https://www.geogebra.org
 
 assert vectorsReachGoal( [(8,2,4),(1,2,16)], (9,4,20))
@@ -61,11 +63,16 @@ assert vectorsReachGoal( [(2,2)], (3,3))
 assert vectorsReachGoal( [(2,2),(3,5),(5,3)], (3,3))
 assert vectorsReachGoal( [(1,1),(2,2),(3,3)], (5,5))
 assert vectorsReachGoal( [(2,2),(3,3)], (1,5)) == False
+assert vectorsReachGoal( [(2,2,2),(3,3,3)], (1,5,1)) == False
+assert vectorsReachGoal( [(15,4),(5,3)], (5,3))
 
 print("\n --- %s seconds ---" % (time.time() - start_time))
 
 """
-goalVector (9, 4, 20) 
+
+
+
+ goalVector (9, 4, 20) 
  vectors [(8, 2, 4), (1, 2, 16)] 
 
 i / j
@@ -240,5 +247,35 @@ i / j
 
 vectorsReachGoal(...) == False
 
- --- 0.03572511672973633 seconds ---
+
+
+ goalVector (1, 5, 1) 
+ vectors [(2, 2, 2), (3, 3, 3)] 
+
+i / j
+
+     1 / 5  < GOAL 
+
+     2 / 2  < greater 
+
+     3 / 3  < greater 
+
+vectorsReachGoal(...) == False
+
+
+
+ goalVector (5, 3) 
+ vectors [(15, 4), (5, 3)] 
+
+i / j
+
+     5 / 3  < GOAL 
+
+     15 / 4  < greater 
+
+     5 / 3  < equal 
+
+vectorsReachGoal(...) == True
+
+ --- 0.036838531494140625 seconds ---
 """
