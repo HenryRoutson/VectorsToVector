@@ -39,11 +39,11 @@ def vectorsReachGoal(vectors, goalVector):
         for component_two in range(component_one+1, len(goalVector)):
 
             if not testRatio(vectors, goalVector, component_one, component_two):
-              print("vectorsReachGoal(...) == False")
+              print("vectorsReachGoal(...) = False")
               return False
              
     # passes if all ratios pass and don't return false before here
-    print("vectorsReachGoal(...) == True")
+    print("vectorsReachGoal(...) = True")
     return True 
 
 import time
