@@ -1,5 +1,6 @@
 #include <iostream>
 #include <vector>
+#include <assert.h>
 using namespace std;
 
 bool testRatio(vector< vector<float> > vectors, vector<float> goalVector, int component_one, int component_two) {
