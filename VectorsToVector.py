@@ -1,3 +1,4 @@
+
 def testRatio(vectors, goalVector, component_one, component_two):
 
     if len(goalVector) <= 3:
@@ -37,12 +38,13 @@ def vectorsReachGoal(vectors, goalVector):
     # moves to different components as to go through unique ratios
     for component_one in range(len(goalVector)):
         for component_two in range(component_one+1, len(goalVector)):
+            assert component_one<component_two
 
             if not testRatio(vectors, goalVector, component_one, component_two):
               print("vectorsReachGoal(...) = False")
               return False
              
-    # passes if all ratios pass and don't return false before here
+    # returns true if no ratios return false
     print("vectorsReachGoal(...) = True")
     return True 
 
@@ -50,7 +52,7 @@ import time
 start_time = time.time()
 
 # test https://www.wolframalpha.com/input/?i=a*%281%2C2%2C3%29%2Bb*%281%2C2%2C3%29%2Bc*%281%2C2%2C3%29%2Bd*%281%2C2%2C3%29%3D%281%2C23%29
-# remember that scale values can always be set to 0 https://www.wolframalpha.com/input/?i=a*%285%2C3%29%2Bb*%2815%2C4%29%2Bc*%2815%2C4%29%3D%285%2C3%29
+# (remember that scale values can always be set to 0) https://www.wolframalpha.com/input/?i=a*%285%2C3%29%2Bb*%2815%2C4%29%2Bc*%2815%2C4%29%3D%285%2C3%29
 
 # visualize https://www.geogebra.org
 
@@ -277,5 +279,8 @@ i / j
 
 vectorsReachGoal(...) == True
 
- --- 0.036838531494140625 seconds ---
+ --- 0.0006191730499267578 seconds ---
 """
+
+# run on MacBook Air M1, 16gb, 2020
+# In terminal

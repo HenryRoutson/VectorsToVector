@@ -1,6 +1,5 @@
 #include <iostream>
 #include <vector>
-#include <chrono>
 using namespace std;
 
 bool testRatio(vector< vector<float> > vectors, vector<float> goalVector, int component_one, int component_two) {
@@ -16,24 +15,25 @@ bool testRatio(vector< vector<float> > vectors, vector<float> goalVector, int co
     bool lesserRatio = false;
     bool greaterRatio = false;
 
+    // test if the ratio fits within the ratio range of the vectors
     for (int i = 0; i < vectors.size(); i++) {
         vector<float> vector = vectors[i];
         float ratio = vector[component_one] / vector[component_two];
-        cout << "\n    " << vector[component_one] << "/" << vector[component_two];
+        cout << "\n    " <<  vector[component_one] << "/" << vector[component_two];
 
         if (ratio < goalRatio) {
             lesserRatio = true;
             cout << " < lesser \n";
-            if (greaterRatio) { return true; }
+            if (greaterRatio) { return true; } // next ratio
         }
         else if (goalRatio < ratio) {
             greaterRatio = true;
             cout << " < greater \n";
-            if (lesserRatio) { return true; }
+            if (lesserRatio) { return true; } // next ratio
         }
         else {
             cout << " < equal \n";
-            return true;
+            return true; // next ratio
         };
     }
 
@@ -64,7 +64,7 @@ bool vectorsReachGoal(vector< vector<float> > vectors, vector<float> goalVector)
     }
     cout << "}";
     
-
+    // moves to different components as to go through unique ratios
     for (int component_one = 0; component_one < goalVector.size(); component_one++) {
         for (int component_two = 1+component_one; component_two < goalVector.size(); component_two++) {
             assert (component_one<component_two);
@@ -75,6 +75,8 @@ bool vectorsReachGoal(vector< vector<float> > vectors, vector<float> goalVector)
             }
         }
     }
+    
+    // returns true if no ratios return false
     cout << "\n vectorsReachGoal(...) = true \n\n\n\n\n\n";
     return true;
 }
@@ -82,6 +84,11 @@ bool vectorsReachGoal(vector< vector<float> > vectors, vector<float> goalVector)
 int main(int argc, const char * argv[]) {
     
     clock_t start_time = clock();
+    
+    // test https://www.wolframalpha.com/input/?i=a*%281%2C2%2C3%29%2Bb*%281%2C2%2C3%29%2Bc*%281%2C2%2C3%29%2Bd*%281%2C2%2C3%29%3D%281%2C23%29
+    // (remember that scale values can always be set to 0) https://www.wolframalpha.com/input/?i=a*%285%2C3%29%2Bb*%2815%2C4%29%2Bc*%2815%2C4%29%3D%285%2C3%29
+    
+    // visualize https://www.geogebra.org
     
     assert ( vectorsReachGoal( {{8,2,4},{1,2,16}}, {9,4,20}) );
     assert ( vectorsReachGoal( {{8,2,4},{1,2,16}, {1,2,3}}, {9,4,200}) == false );
@@ -95,9 +102,7 @@ int main(int argc, const char * argv[]) {
     assert ( vectorsReachGoal( {{2,2,2},{3,3,3}}, {1,5,1}) == false );
     assert ( vectorsReachGoal( {{15,4},{5,3}}, {5,3}) );
     
-    clock_t end_time1 = clock();
-    clock_t result = end_time1 - start_time;
-    cout << " --- " << result <<" milliseconds ---" << endl;
+    cout << " --- " << (clock() - start_time) <<" milliseconds ---" << endl;
 
     return 0;
 }
@@ -350,7 +355,10 @@ vectorsReachGoal(...) = true
 
 
 
---- 0 seconds ---
+ --- 293 milliseconds ---
 Program ended with exit code: 0
 
 */
+
+// run on MacBook Air M1, 16gb, 2020
+// In xcode
